@@ -1,22 +1,16 @@
-#  Project Title
+![Minecraft Bedrock Proxy Container Banner](docs/images/banner.jpg)
 
-A README file, along with a repository license, contribution guidelines, and a code of conduct, helps you communicate expectations for and manage contributions to your project.
+# Minecraft Bedrock proxy server in a Docker container
 
-A README is often the first item a visitor will see when visiting your repository. README files typically include information on:
+Building a Minecraft Bedrock proxy server based on [jhead/phantom](https://github.com/explore) into an docker image
 
-- What the project does
-- Why the project is useful
-- How users can get started with the project
-- Where users can get help with your project
-- Who maintains and contributes to the project
-
-:exclamation: Please also have a look at the [license](LICENSE.md) and if the license fits the needs of your project. :exclamation: 
+More info coming soon. Stay tuned!
 
 ---
 
 ## :ambulance: Support Information
 
-For further information about this project, how to [contribute](CONTRIBUTING.md), or how to contact us, please have a look at the [support document](SUPPORT.md) of this repository. It also contains information about [security related topics](SECURITY.md), [licensing](LICENSE.md), and more.  
+For further information about this project, how to [contribute](CONTRIBUTING.md), or how to contact us, please have a look at the [support document](SUPPORT.md) of this repository. It also contains information about [security related topics](SECURITY.md), [licensing](LICENSE.md), and more.
 
 ## :man_judge: Disclaimer
 
