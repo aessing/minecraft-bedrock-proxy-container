@@ -1,7 +1,7 @@
 # =============================================================================
 # Dockerfile
-# Minecraft Bedrock Proxy Container
-# https://github.com/aessing/minecraft-bedrock-proxy-container
+# Minecraft Bedrock Phantom Container
+# https://github.com/aessing/minecraft-bedrock-phantom-container
 # -----------------------------------------------------------------------------
 # Developer.......: Andre Essing (https://www.andre-essing.de/)
 #                                (https://github.com/aessing)
@@ -23,29 +23,29 @@ FROM alpine:latest
 #
 # Set some information
 #
-LABEL tag="aessing/minecraft-bedrock-proxy-container" \
-      description="A Docker container which uses jhead/phantom to make Minecraft Bedrocks servers available on Xbox and PS" \
+LABEL tag="aessing/minecraft-bedrock-phantom-container" \
+      description="A Docker container which uses jhead/phantom to make Minecraft Bedrocks servers visible on Xbox and PS" \
       disclaimer="THE CONTENT OF THIS REPOSITORY IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE CONTENT OF THIS REPOSITORY OR THE USE OR OTHER DEALINGS BY CONTENT OF THIS REPOSITORY." \
       vendor="Andre Essing" \
-      github-repo="https://github.com/aessing/minecraft-bedrock-proxy-container"
+      github-repo="https://github.com/aessing/minecraft-bedrock-phantom-container"
 
 ###############################################################################
 #
 # Set some parameters
 #
-ARG PROXY_VERSION="0.5.3" \
+ARG PROXY_VERSION="0.5.4" \
     PROXY_PATH="/proxy" \
     UIDGID="10999"
 
 ENV PROXY_BIN="${PROXY_PATH}/phantom-linux" \
     PROXY_DOWNLOAD="https://github.com/jhead/phantom/releases/download/v${PROXY_VERSION}/phantom-linux" \
-    BIND=0 \
-    BIND_PORT=0 \
-    DEBUG='false' \
-    IPV6='false' \
-    REMOVE_PORTS='false' \
-    SERVER=0 \
-    TIMEOUT=60
+    PHANTOM_BIND=0 \
+    PHANTOM_BIND_PORT=0 \
+    PHANTOM_DEBUG='false' \ 
+    PHANTOM_IPV6='false' \
+    PHANTOM_REMOVE_PORTS='false' \
+    PHANTOM_SERVER=0 \
+    PHANTOM_TIMEOUT=60
 
 EXPOSE 19132/udp
 
@@ -70,7 +70,8 @@ RUN chmod 755 ${PROXY_PATH}/entrypoint.sh
 # Create and run in non-root context
 #
 RUN addgroup -g ${UIDGID} -S ${UIDGID} \
-    && adduser -G ${UIDGID} -S -u ${UIDGID} ${UIDGID}
+    && adduser -G ${UIDGID} -S -u ${UIDGID} ${UIDGID} \
+    && chown -R ${UIDGID}.${UIDGID} ${PROXY_PATH}
 USER ${UIDGID}
 
 ###############################################################################
