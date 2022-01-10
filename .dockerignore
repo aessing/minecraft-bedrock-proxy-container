@@ -1,5 +1,7 @@
 ﻿# Exclude repository directories
 
+.github/\*
+.media/\*
 docs/\*
 
 # Exlude repository files

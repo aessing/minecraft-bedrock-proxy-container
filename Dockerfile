@@ -1,7 +1,7 @@
 # =============================================================================
 # Dockerfile
-# Minecraft Bedrock Phantom Container
-# https://github.com/aessing/minecraft-bedrock-phantom-container
+# Minecraft Bedrock Proxy Container
+# https://github.com/aessing/minecraft-bedrock-proxy-container
 # -----------------------------------------------------------------------------
 # Developer.......: Andre Essing (https://www.andre-essing.de/)
 #                                (https://github.com/aessing)
@@ -23,11 +23,11 @@ FROM alpine:latest
 #
 # Set some information
 #
-LABEL tag="aessing/minecraft-bedrock-phantom-container" \
+LABEL tag="aessing/minecraft-bedrock-proxy-container" \
       description="A Docker container which uses jhead/phantom to make Minecraft Bedrocks servers visible on Xbox and PS" \
       disclaimer="THE CONTENT OF THIS REPOSITORY IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE CONTENT OF THIS REPOSITORY OR THE USE OR OTHER DEALINGS BY CONTENT OF THIS REPOSITORY." \
       vendor="Andre Essing" \
-      github-repo="https://github.com/aessing/minecraft-bedrock-phantom-container"
+      github-repo="https://github.com/aessing/minecraft-bedrock-proxy-container"
 
 ###############################################################################
 #
@@ -39,15 +39,13 @@ ARG PROXY_VERSION="0.5.4" \
 
 ENV PROXY_BIN="${PROXY_PATH}/phantom-linux" \
     PROXY_DOWNLOAD="https://github.com/jhead/phantom/releases/download/v${PROXY_VERSION}/phantom-linux" \
-    PHANTOM_BIND=0 \
-    PHANTOM_BIND_PORT=0 \
-    PHANTOM_DEBUG='false' \ 
-    PHANTOM_IPV6='false' \
-    PHANTOM_REMOVE_PORTS='false' \
-    PHANTOM_SERVER=0 \
-    PHANTOM_TIMEOUT=60
-
-EXPOSE 29132-29199/udp
+    BIND=0 \
+    BIND_PORT=0 \
+    DEBUG='false' \ 
+    IPV6='false' \
+    REMOVE_PORTS='false' \
+    SERVER=0 \
+    TIMEOUT=60
 
 ###############################################################################
 #

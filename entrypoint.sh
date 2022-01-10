@@ -1,9 +1,9 @@
 #! /bin/sh
 
 # =============================================================================
-# Minecraft Bedrock Phantom Server startup script
-# Minecraft Bedrock Phantom Container
-# https://github.com/aessing/minecraft-bedrock-phantom-container
+# Minecraft Bedrock Proxy Server startup script
+# Minecraft Bedrock Proxy Container
+# https://github.com/aessing/minecraft-bedrock-proxy-container
 # -----------------------------------------------------------------------------
 # Developer.......: Andre Essing (https://www.andre-essing.de/)
 #                                (https://github.com/aessing)
@@ -19,7 +19,7 @@ set -eo pipefail
 
 ###############################################################################
 # Set base start command
-if [[ "${PHANTOM_SERVER}" == 0 ]]; then
+if [[ "${SERVER}" == 0 ]]; then
     echo
     echo "-------------------------------------------------------------------------------------"
     echo "SERVER environment variable not set"
@@ -28,36 +28,36 @@ if [[ "${PHANTOM_SERVER}" == 0 ]]; then
     echo
     exit 1
 fi
-PROXY_COMMAND="${PROXY_BIN} -server ${PHANTOM_SERVER}"
+PROXY_COMMAND="${PROXY_BIN} -server ${SERVER}"
 
 
 ###############################################################################
 # Add additional Parameters
-if [ ${PHANTOM_BIND} != 0 ]; then
-  PROXY_COMMAND="${PROXY_COMMAND} -bind ${PHANTOM_BIND}"
+if [ ${BIND} != 0 ]; then
+  PROXY_COMMAND="${PROXY_COMMAND} -bind ${BIND}"
 fi
 
-if [ ${PHANTOM_BIND_PORT} != 0 ]; then
-  PROXY_COMMAND="${PROXY_COMMAND} -bind_port ${PHANTOM_BIND_PORT}"
+if [ ${BIND_PORT} != 0 ]; then
+  PROXY_COMMAND="${PROXY_COMMAND} -bind_port ${BIND_PORT}"
 fi
 
-DEBUG=$(echo ${PHANTOM_DEBUG} | tr 'a-z' 'A-Z')
+DEBUG=$(echo ${DEBUG} | tr 'a-z' 'A-Z')
 if [ ${DEBUG} == 'TRUE' ]; then
   PROXY_COMMAND="${PROXY_COMMAND} -debug"
 fi
 
-IPV6=$(echo ${PHANTOM_IPV6} | tr 'a-z' 'A-Z')
+IPV6=$(echo ${IPV6} | tr 'a-z' 'A-Z')
 if [ ${IPV6} == 'TRUE' ]; then
   PROXY_COMMAND="${PROXY_COMMAND} -6"
 fi
 
-REMOVE_PORTS=$(echo ${PHANTOM_REMOVE_PORTS} | tr 'a-z' 'A-Z')
+REMOVE_PORTS=$(echo ${REMOVE_PORTS} | tr 'a-z' 'A-Z')
 if [ ${REMOVE_PORTS} == 'TRUE' ]; then
   PROXY_COMMAND="${PROXY_COMMAND} -remove_ports"
 fi
 
-if [ ${PHANTOM_TIMEOUT} != 60 ]; then
-  PROXY_COMMAND="${PROXY_COMMAND} -timeout ${PHANTOM_TIMEOUT}"
+if [ ${TIMEOUT} != 60 ]; then
+  PROXY_COMMAND="${PROXY_COMMAND} -timeout ${TIMEOUT}"
 fi
 
 ###############################################################################
