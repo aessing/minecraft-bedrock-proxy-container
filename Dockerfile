@@ -47,7 +47,7 @@ ENV PROXY_BIN="${PROXY_PATH}/phantom-linux" \
     PHANTOM_SERVER=0 \
     PHANTOM_TIMEOUT=60
 
-EXPOSE 19132/udp
+EXPOSE 29132-29199/udp
 
 ###############################################################################
 #
