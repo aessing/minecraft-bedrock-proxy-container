@@ -16,7 +16,7 @@ You can find the license information for this repository in its [license](LICENS
 
 ## :detective: Security Policy
 
-We take the security of our software and services serious, which includes all of our repositories. 
+We take the security of our software and services serious, which includes all of our repositories.
 If you believe you have found a security vulnerability in any of our repositories, please report it as described in our [Security Policy](SECURITY.md).
 
 For more information, or any additional questions or comments, please contact us at [codesec@essing.org](mailto:codesec@essing.org)

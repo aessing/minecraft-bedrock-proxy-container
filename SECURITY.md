@@ -6,7 +6,7 @@ If you believe you have found a security vulnerability in any of our repositorie
 
 ## :mega: Reporting Security Issues
 
-__Please do not report security vulnerabilities through public GitHub issues.__
+**Please do not report security vulnerabilities through public GitHub issues.**
 
 Instead, please report them directly via mail to our [Security Team](mailto:codesec@essing.org).
 

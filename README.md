@@ -1,8 +1,8 @@
-![Minecraft Bedrock Proxy Container Banner](docs/images/banner.jpg)
+![Minecraft Bedrock Phantom Container Banner](docs/images/banner.jpg)
 
-# Minecraft Bedrock proxy server in a Docker container
+# Minecraft Bedrock server in a Docker container
 
-Building a Minecraft Bedrock proxy server based on [jhead/phantom](https://github.com/explore) into an docker image
+Building a Minecraft Bedrock advertisement server based on [jhead/phantom](https://github.com/explore) into an docker image
 
 More info coming soon. Stay tuned!
 

@@ -8,7 +8,7 @@ Please follow this simple rule to help us stop any unnecessary effort and frustr
 
 > If you have a question, or do you think you have discovered an issue, or would you like to propose a new feature, etc., then find/file an issue before starting work to fix or implement it.
 >
->:exclamation: **For security issues please have a look at the [Security Policy](SECURITY.md)** :exclamation:
+> :exclamation: **For security issues please have a look at the [Security Policy](SECURITY.md)** :exclamation:
 
 ### :mag_right: Search existing issues first
 

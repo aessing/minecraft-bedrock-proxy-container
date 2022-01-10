@@ -4,9 +4,9 @@ This Code of Conduct outlines expectations for participation in the community, a
 
 This community strive to:
 
-- __Be friendly and patient__: Remember you might not be communicating in someone else's primary spoken or programming language, and others may not have your level of understanding.
-- __Be welcoming__: This community welcomes and support people of all backgrounds and identities. This includes, but is not limited to members of any race, ethnicity, culture, national origin, color, immigration status, social and economic class, educational level, level of experience, sex, sexual identity and orientation, gender identity and expression, personal appearance, age, size, family status, political belief, religion, and mental and physical ability.
-- __Be respectful__: This is a world-wide community of professionals, and we conduct ourselves professionally. Disagreement is no excuse for poor behavior and poor manners. Disrespectful and unacceptable behavior includes, but is not limited to:
+- **Be friendly and patient**: Remember you might not be communicating in someone else's primary spoken or programming language, and others may not have your level of understanding.
+- **Be welcoming**: This community welcomes and support people of all backgrounds and identities. This includes, but is not limited to members of any race, ethnicity, culture, national origin, color, immigration status, social and economic class, educational level, level of experience, sex, sexual identity and orientation, gender identity and expression, personal appearance, age, size, family status, political belief, religion, and mental and physical ability.
+- **Be respectful**: This is a world-wide community of professionals, and we conduct ourselves professionally. Disagreement is no excuse for poor behavior and poor manners. Disrespectful and unacceptable behavior includes, but is not limited to:
   - Violent threats or language.
   - Discriminatory or derogatory jokes and language.
   - Posting sexually explicit or violent material.
@@ -16,7 +16,7 @@ This community strive to:
   - Trolling.
   - Other conduct which could reasonably be considered inappropriate in a professional setting.
   - Advocating for or encouraging any of the above behaviors.
-- __Understand disagreements__: Disagreements, both social and technical, are useful learning opportunities. Seek to understand the other viewpoints and resolve differences constructively.
+- **Understand disagreements**: Disagreements, both social and technical, are useful learning opportunities. Seek to understand the other viewpoints and resolve differences constructively.
 - This code is not exhaustive or complete. It serves to capture the common understanding of a productive, collaborative environment. We expect the code to be followed in spirit as much as in the letter.
 
 ## :telescope: Scope
@@ -34,6 +34,7 @@ Project maintainers have the right and responsibility to remove, edit, or reject
 Whenever possible, the community should try to resolve issues on their own. This builds a broader and deeper understanding and ultimately a healthier interaction. In the event that an issue cannot be resolved locally, please feel free to report your concerns by contacting [codeofconduct@essing.org](mailto:codeofconduct@essing.org).
 
 In your report please include:
+
 - Your contact information.
 - Names (real, usernames or pseudonyms) of any individuals involved. If there are additional witnesses, please include them as well.
 - Your account of what occurred, and if you believe the incident is ongoing. If there is a publicly available record (e.g. a mailing list archive or a public chat log), please include a link or attachment.
