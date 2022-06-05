@@ -27,12 +27,12 @@ LABEL tag="aessing/minecraft-bedrock-proxy-container" \
 
 ###############################################################################
 # Set some parameters
-ARG UIDGID="10999" \
+ARG PROXY_PATH="/proxy" \
+    PROXY_VERSION="0.5.4" \
+    UIDGID="10999" \
     USERGROUPNAME='phantom'
 ENV PROXY_BIN="${PROXY_PATH}/phantom-linux" \
     PROXY_DOWNLOAD="https://github.com/jhead/phantom/releases/download/v${PROXY_VERSION}/phantom-linux" \
-    PROXY_PATH="/proxy" \
-    PROXY_VERSION="0.5.4" \
     BIND=0 \
     BIND_PORT=0 \
     DEBUG='false' \ 
