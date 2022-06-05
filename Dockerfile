@@ -50,7 +50,7 @@ COPY entrypoint.sh ${PROXY_PATH}/entrypoint.sh
 ###############################################################################
 # Install phantom-linux
 RUN mkdir -p ${PROXY_PATH} \
-    && curl ${PROXY_DOWNLOAD} --output ${PROXY_BIN} \
+    && curl ${PROXY_DOWNLOAD} --output ${PROXY_BIN} -L \
     && chmod 750 -R ${PROXY_PATH}
 
 ###############################################################################
