@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/bash
 
 # =============================================================================
 # Minecraft Bedrock Proxy Server startup script
@@ -29,7 +29,6 @@ if [[ "${SERVER}" == 0 ]]; then
     exit 1
 fi
 PROXY_COMMAND="${PROXY_BIN} -server ${SERVER}"
-
 
 ###############################################################################
 # Add additional Parameters
